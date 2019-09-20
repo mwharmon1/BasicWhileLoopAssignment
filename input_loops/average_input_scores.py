@@ -6,9 +6,15 @@
 
 
 def average(score_list):
-    pass
+    scores_total = 0
+    items = len(score_list)
+    for i in score_list:
+        scores_total += i
+        items - 1
+    avg = scores_total / items
+    return round(float(avg), 2)
 
 
 if __name__ == '__main__':
     scores = []
-    average(scores)
+    print(average(scores))
